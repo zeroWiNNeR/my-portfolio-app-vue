@@ -1,0 +1,9 @@
+.idea/
+.firebase/
+build/
+node_modules/
+npm-debug.log
+package-lock.json
+yarn.lock
+firebase.json
+.firebaserc
