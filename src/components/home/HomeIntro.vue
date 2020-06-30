@@ -44,7 +44,7 @@
         height: 20vh;
         width: 100%;
         position: absolute;
-        bottom: 0;
+        bottom: -1px;
         background: rgb(22,25,32);
         background: linear-gradient(0deg, rgba(22,25,32,1) 0%, rgba(22,25,32,0) 100%);
     }
