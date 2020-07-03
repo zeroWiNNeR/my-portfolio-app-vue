@@ -9,16 +9,6 @@
             <div class="about-skills-rectangle" />
 
             <div class="mt-12 space-around" style="position: absolute; align-items: center;">
-<!--                <v-responsive-->
-<!--                        class="about-skills-backend-circle text-center grey lighten-2 rounded-circle d-inline-flex align-center mr-10"-->
-<!--                        min-height="12vw"-->
-<!--                        min-width="12vw"-->
-<!--                >-->
-<!--                    Backend-->
-<!--                    <div>-->
-
-<!--                    </div>-->
-<!--                </v-responsive>-->
                 <v-progress-circular
                         class="text-center white rounded-circle d-inline-flex justify-center mr-10 about-skills-backend-circle"
                         :rotate="-90"
@@ -27,13 +17,14 @@
                         :width="8"
                         @click=""
                         color="green"
-                >Backend</v-progress-circular>
-
+                >
+                    Backend
+                </v-progress-circular>
 
                 <v-responsive
-                        class="about-skills-main-circle grey lighten-2 text-center rounded-circle d-inline-flex align-center my-5"
-                        min-height="20vw"
-                        min-width="20vw"
+                        class="about-skills-main-circle text-center rounded-circle d-inline-flex align-center"
+                        height="300px"
+                        width="300px"
                 >
                     DEVELOPMENT DIRECTIONS
                 </v-responsive>
@@ -46,12 +37,11 @@
                         :width="8"
                         @click=""
                         color="blue"
-                >Frontend</v-progress-circular>
-
+                >
+                    Frontend
+                </v-progress-circular>
             </div>
-
         </div>
-
     </div>
 </template>
 
@@ -73,12 +63,13 @@
         display: flex;
         justify-content: center;
         transform: translate(-50%,0);
-        left: -80vw;
+        left: 50%;
         width: 80vw;
         height: 80vh;
+        opacity: 0;
         transition: all 1s;
-        z-index: 999;
-        /*font-family:  "Comic Sans MS", cursive, sans-serif;*/
+        z-index: 0;
+        font-family: 'Raleway', sans-serif;
     }
 
     .about-skills-rectangle {
@@ -87,22 +78,24 @@
         background: #2a2e32;
     }
 
+    /* Development directions circle */
     .about-skills-main-circle {
         background-color: white;
-        font-family: 'Roboto Condensed', sans-serif;
+
         border-radius: 50%;
         box-shadow: 0 0 0 rgba(255, 255, 255, 0.8);
         animation: anim-about-skills-main-circle-border 2s infinite;
+        z-index: 999;
     }
     @-webkit-keyframes anim-about-skills-main-circle-border {
         0% {
-            -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.8);
+            -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.9);
         }
         70% {
-            -webkit-box-shadow: 0 0 0 20px rgba(204,169,44, 0);
+            -webkit-box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
         }
         100% {
-            -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+            -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
         }
     }
     @keyframes anim-about-skills-main-circle-border {
@@ -111,39 +104,38 @@
             box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.8);
         }
         70% {
-            -moz-box-shadow: 0 0 0 30px rgba(204,169,44, 0);
-            box-shadow: 0 0 0 30px rgba(204,169,44, 0);
+            -moz-box-shadow: 0 0 0 30px rgba(255, 255, 255, 0);
+            box-shadow: 0 0 0 30px rgba(255, 255, 255, 0);
         }
         100% {
-            -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
-            box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+            -moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+            box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
         }
     }
 
+    /* Backend circle and his views */
+    .about-skills-backend-circle {
+        -webkit-transition:all 0.3s ease;
+        -moz-transition:all 0.3s ease;
+        -o-transition:all 0.3s ease;
+        transition:all 0.3s ease;
+    }
     .about-skills-backend-circle:hover {
-        animation: anim-about-skills-backend-circle linear 1s ;
+        cursor: pointer;
+        transform: scale(1.1, 1.1);
     }
-    @-webkit-keyframes anim-about-skills-backend-circle {
-        0% {
-            transform: scale(1);
-        }
-        50% {
-            transform: scale(1.05);
-        }
-        100% {
-            transform: scale(1.1);
-        }
+
+    /* Frontend circle and his views */
+    .about-skills-frontend-circle {
+        -webkit-transition:all 0.3s ease;
+        -moz-transition:all 0.3s ease;
+        -o-transition:all 0.3s ease;
+        transition:all 0.3s ease;
     }
-    @keyframes anim-about-skills-backend-circle {
-        0% {
-            transform: scale(1);
-        }
-        50% {
-            transform: scale(1.05);
-        }
-        100% {
-            transform: scale(1.1);
-        }
+    .about-skills-frontend-circle:hover {
+        cursor: pointer;
+        transform: scale(1.1, 1.1);
     }
+
 
 </style>

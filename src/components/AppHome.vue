@@ -44,9 +44,9 @@
 
         let aboutSkills = document.querySelector('.about-skills')
         if (window.pageYOffset > (window.innerHeight/2)) {
-            aboutSkills.style.left = '50%'
+            aboutSkills.style.opacity = '1';
         } else {
-            aboutSkills.style.left = '-80vw'
+            aboutSkills.style.opacity = '0';
         }
     }
     window.onscroll = onScrollCheck
@@ -78,7 +78,8 @@
         },
         methods: {
             onClick () {
-                window.scrollTo(0,0)
+                // window.scrollTo(0,0)
+                this.$vuetify.goTo(this.$refs.homeIntro, this.options)
             }
         }
     }
