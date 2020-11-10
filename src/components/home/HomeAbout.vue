@@ -248,11 +248,9 @@ export default {
 .contacts-container {
     position: relative;
     left: 10%;
+    z-index: 10;
 }
 
-.contacts {
-
-}
 
 .title {
     font-family: 'EuropeCondensedC', sans-serif;
