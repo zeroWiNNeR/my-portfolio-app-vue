@@ -1,8 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
-import AppHome from '@/components/AppHome';
-import AppMedium from '@/components/AppMedium';
+import AppHome from '@/components/HomePage';
 
 Vue.use(Router);
 
@@ -15,11 +14,6 @@ export default new Router({
             name: 'Home',
             component: AppHome
             // component: () => import('./components/AppHome')
-        },
-        {
-            path: '/medium',
-            name: 'Medium',
-            component: AppMedium
         }
     ]
 });

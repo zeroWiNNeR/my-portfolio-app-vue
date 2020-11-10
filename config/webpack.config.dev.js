@@ -9,13 +9,13 @@ const environment          = require('./env/dev.env');
 
 const webpackConfig = merge(commonConfig, {
     mode: 'development',
+    devtool: 'eval-cheap-module-source-map',
     output: {
         path: helpers.root('dist'),
         publicPath: '/',
         filename: 'js/[name].bundle.js',
         chunkFilename: 'js/[id].chunk.js'
     },
-
     optimization: {
         runtimeChunk: 'single',
         splitChunks: {
@@ -42,8 +42,7 @@ const webpackConfig = merge(commonConfig, {
         port: 8000,
         stats: 'errors-only',
         clientLogLevel: 'error'
-    },
-    devtool: 'eval-cheap-module-source-map'
+    }
 });
 
 module.exports = webpackConfig;

@@ -1,26 +1,27 @@
 <template>
-  <v-app id="app">
-<!--    <router-link to="/">-->
-<!--      Home-->
-<!--    </router-link> |-->
-<!--    <router-link to="/medium">-->
-<!--      Medium-->
-<!--    </router-link>-->
-<!--    <router-view />-->
+    <v-app id="app">
+        <!--    <router-link to="/">-->
+        <!--      Home-->
+        <!--    </router-link> |-->
+        <!--    <router-link to="/medium">-->
+        <!--      Medium-->
+        <!--    </router-link>-->
+        <!--    <router-view />-->
 
-    <AppHome />
+        <HomePage/>
 
-  </v-app>
+    </v-app>
 </template>
 
 
 <script>
-  import AppHome from "./components/AppHome";
-  export default {
+import HomePage from "./components/HomePage";
+
+export default {
     components: {
-      AppHome
+        HomePage
     }
-  }
+}
 
 </script>
 
