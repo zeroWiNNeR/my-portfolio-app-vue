@@ -171,7 +171,7 @@ export default {
             this.dialog = true
         },
         showFrontendInfo() {
-            this.dialogHeader = 'Backend'
+            this.dialogHeader = 'Frontend'
             this.dialogText = 'Я являюсь разработчиком веб-сайтов, разработанных с учетом потребностей заказчика. ' +
                 'Стремлюсь реализовать уникальный дизайн для веб-сайтов, который позволит выделиться бизнесу.'
             this.dialog = true
