@@ -33,7 +33,7 @@ const webpackConfig = merge(commonConfig, {
         hot: true,
         open: true,
         overlay: true,
-        host: '192.168.1.123',
+        host: '192.168.0.100',
         // allowedHosts: [
         //     'localhost',
         //     '192.168.1.123',

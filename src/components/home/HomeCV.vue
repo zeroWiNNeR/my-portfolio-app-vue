@@ -95,7 +95,7 @@ export default {
   height: 20vh;
   width: 100%;
   position: absolute;
-  top: 200vh;
+  top: 197vh;
   background: rgb(22, 25, 32);
   background: linear-gradient(180deg, rgba(22, 25, 32, 1) 0%, rgba(22, 25, 32, 0) 100%);
 }

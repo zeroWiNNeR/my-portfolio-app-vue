@@ -101,7 +101,7 @@
             </v-col>
         </v-row>
 
-        <v-row align="center" justify="left" style="height: 40vh">
+        <v-row align="center" justify="start" style="height: 40vh">
             <div class="contacts-container">
                 <div class="title">Контактная информация</div>
                 <div class="subtitle">
@@ -118,7 +118,7 @@
                             <a href="viber://chat?number=79519485262"><img src="/assets/images/viber.svg"></a>
                         </div>
                         <div class="item telegram">
-                            <a href="tg://resolve?domain=@zeroWiNNeR"><img src="/assets/images/telegram.svg"></a>
+                            <a href="tg://resolve?domain=zeroWiNNeR"><img src="/assets/images/telegram.svg"></a>
                         </div>
                         <div class="phone">
                             <div class="number">+7 951 948 52 62</div>
