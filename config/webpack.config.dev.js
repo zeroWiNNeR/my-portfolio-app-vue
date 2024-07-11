@@ -6,6 +6,7 @@ const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin');
 const helpers              = require('./helpers');
 const commonConfig         = require('./webpack.config.common');
 const environment          = require('./env/dev.env');
+const isDevMode = true
 
 const webpackConfig = merge(commonConfig, {
     mode: 'development',
@@ -33,7 +34,7 @@ const webpackConfig = merge(commonConfig, {
         hot: true,
         open: true,
         overlay: true,
-        host: '192.168.0.100',
+        host: isDevMode ? 'localhost' : '192.168.0.100',
         // allowedHosts: [
         //     'localhost',
         //     '192.168.1.123',
