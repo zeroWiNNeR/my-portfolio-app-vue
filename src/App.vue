@@ -1,31 +1,19 @@
 <template>
-    <v-app id="app">
-        <!--    <router-link to="/">-->
-        <!--      Home-->
-        <!--    </router-link> |-->
-        <!--    <router-link to="/medium">-->
-        <!--      Medium-->
-        <!--    </router-link>-->
-        <!--    <router-view />-->
-
-        <HomePage/>
-
-    </v-app>
+  <v-app id="app">
+    <index/>
+  </v-app>
 </template>
 
 
 <script>
-import HomePage from "./components/HomePage";
+import index from "@/pages/index"
 
 export default {
-    components: {
-        HomePage
-    }
+  components: {
+    index
+  }
 }
-
 </script>
 
 
-<style>
-
-</style>
+<style></style>
