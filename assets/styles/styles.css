@@ -1,0 +1,29 @@
+html,
+body {
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #141416;
+  color: black;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  font-weight: normal;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+}
+
+body::-webkit-scrollbar {
+  width: 3px;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 24px;
+  background: #3d3d3d;
+}
