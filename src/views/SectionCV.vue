@@ -18,12 +18,12 @@
           </a>
         </li>
         <li>
-          <a href="tg://resolve?domain=zeroWiNNeR">
+          <a href="https://t.me/zeroWiNNeR">
             <img src="/assets/images/svg/telegram.svg" alt="Icon telegram" />
           </a>
         </li>
         <li>
-          <a href="mailto:vekovshinin.aiu@gmail.com?subject=Письмо с сайта визитки">
+          <a href="mailto:vekovshinin.ayu@gmail.com?subject=Письмо с сайта визитки">
             <img src="/assets/images/svg/email.svg" alt="Icon email" />
           </a>
         </li>

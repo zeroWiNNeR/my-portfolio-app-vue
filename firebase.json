@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "vekovshinin-aiu",
+    "site": "vekovshinin-ayu",
     "public": "build",
     "ignore": [
       "firebase.json",

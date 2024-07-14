@@ -13,8 +13,7 @@
     "Webpack 4"
   ],
   "private": true,
-  "license": "MIT",
-  "author": "zeroWiNNeR <vekovshinin.aiu@gmail.com>",
+  "author": "zeroWiNNeR <vekovshinin.ayu@gmail.com>",
   "homepage": "https://github.com/zeroWiNNeR/my-portfolio-app-vue",
   "repository": {
     "type": "git",
@@ -42,6 +41,7 @@
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.5",
     "compression-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^6.4.1",
     "cross-env": "^7.0.2",
     "css-loader": "^3.6.0",
     "deepmerge": "^4.2.2",
@@ -64,8 +64,7 @@
     "webpack-merge": "^4.2.2"
   },
   "engines": {
-    "node": ">= 6.0.0",
-    "npm": ">= 3.0.0"
+    "node": "^14.21.3"
   },
   "browserslist": [
     "> 1%",
